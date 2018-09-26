@@ -8,6 +8,10 @@ body{
   font-weight:400;
 }
 
+.description{
+  margin: 10px 0px 10px 0px;
+}
+
 /*banner name at top*/
 h1{
   font-size: 3em;
