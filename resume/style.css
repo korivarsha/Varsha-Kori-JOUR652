@@ -1,0 +1,57 @@
+/* styles for my resume */
+
+/*general style for all the content unless otherwise specified*/
+body{
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 12px;
+  color: #444;
+  font-weight:400;
+}
+
+/*banner name at top*/
+h1{
+  font-size: 3em;
+  color: #33485e;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*style for my title*/
+#title{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #33485e;
+}
+
+/*style for section titles*/
+h2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: #33485e;
+  color: white;
+  font-weight: 400;
+}
+
+/*style for job titles*/
+h3{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+/*style for job organization*/
+h4{
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/*style for job dates*/
+h5{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+}
+
+/*style for all the lists in the resume*/
+ul{
+  font-size: 1em;
+}
