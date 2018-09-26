@@ -9,17 +9,19 @@ body{
 }
 
 /*banner name at top*/
-#name{
+h1{
   font-size: 3em;
   color: #33485e;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #33485e;
-  width: 60%;
-  min-width: 300px;
-  margin: 0 auto center;
 }
 
+#name{
+  border-bottom: 1px solid #33485e;
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+}
 /*style for my title*/
 #title{
   text-transform: uppercase;
@@ -28,12 +30,15 @@ body{
 }
 
 /*style for section titles*/
-h2{
+.sectionheader{
   font-size: 1.5em;
   text-transform: uppercase;
   background-color: #33485e;
   color: white;
   font-weight: 400;
+  margin: 20px 0px 10px 0px;
+  width: 70%;
+  min-width: 300px;
 }
 
 /*style for job titles*/
@@ -43,9 +48,9 @@ h3{
 }
 
 /*style for job organization*/
-h4{
+.organization{
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 /*style for job dates*/
@@ -53,6 +58,10 @@ h5{
   font-weight: 400;
   font-style: italic;
   font-size: 1em;
+}
+
+.dates{
+  margin: 2px 0px 0px 0px;
 }
 
 /*style for all the lists in the resume*/
