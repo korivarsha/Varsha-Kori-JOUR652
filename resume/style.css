@@ -3,9 +3,14 @@
 /*general style for all the content unless otherwise specified*/
 body{
   font-family: 'Open Sans', arial, sans-serif;
-  font-size: 12px;
-  color: #444;
-  font-weight:400;
+
+}
+
+#container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px 50px 0px;
 }
 
 .description{
@@ -13,14 +18,11 @@ body{
 }
 
 /*banner name at top*/
-h1{
+#name{
   font-size: 3em;
   color: #33485e;
   text-transform: uppercase;
   text-align: center;
-}
-
-#name{
   border-bottom: 1px solid #33485e;
   width: 60%;
   min-width: 300px;
@@ -31,6 +33,9 @@ h1{
   text-transform: uppercase;
   font-size: 1.5em;
   color: #33485e;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
 }
 
 /*style for section titles*/
@@ -43,10 +48,11 @@ h1{
   margin: 20px 0px 10px 0px;
   width: 70%;
   min-width: 300px;
+  padding-left: 20px; 
 }
 
 /*style for job titles*/
-h3{
+.jobtitle{
   font-weight: 600;
   font-size: 1.5em;
 }
@@ -58,17 +64,39 @@ h3{
 }
 
 /*style for job dates*/
-h5{
+.date{
   font-weight: 400;
   font-style: italic;
   font-size: 1em;
-}
-
-.dates{
   margin: 2px 0px 0px 0px;
 }
 
 /*style for all the lists in the resume*/
-ul{
+li{
   font-size: 1em;
+}
+
+.menu{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.menu li{
+    display: inline;
+}
+
+#degrees{
+  margin: 5px 0px 0px 0px;
+}
+
+#do{
+  margin: 5px 0px 0px 0px;
+}
+
+.top{
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
