@@ -1,0 +1,94 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*.navbar {background-color: #f4f4f4}*/
+.nav-link , .navbar-brand{ color: #333; cursor: pointer;}
+.navbar-brand:hover{ color: #1769ff; }
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ color: #1769ff; }
+.navbar-collapse{ justify-content: flex-end;}
+/*.navbar-toggler{  background:#fff !important;}*/
+
+/*header style*/
+.header{
+ /*background-image: url('/Users/varshakori/Documents/GitHub/Varsha-Kori-JOUR652/resume/Varsha-Kori_Banner.png');*/
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ margin: auto;
+ padding: auto;
+}
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.79);
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+ color:#333 ;
+}
+.description p{
+ color:#333;
+ font-size: 25px;
+ width: 100%;
+ line-height: 2;
+}
+.description button{
+ border:1px  solid #1769ff;
+ border-radius: 50px;
+ background:#1769ff;
+ color:#fff;
+}
+
+.description button:hover{
+  border:2px  solid #1769ff;
+  border-radius: 50px;
+  background:#fff;
+  color:#1769ff;
+}
+
+.about{
+ margin: 4em 0;
+ padding: 1em;
+ position: relative;
+}
+.about h1{
+ color:#F97300;
+ margin: 2em;
+}
+.about img{
+ height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+ display: block;
+ color: #888;
+ position: absolute;
+ left: 115px;
+}
+.about .desc{
+ padding: 2em;
+ border-left:4px solid #10828C;
+}
+.about .desc h3{
+ color: #10828C;
+}
+.about .desc p{
+ line-height:2;
+ color:#888;
+}

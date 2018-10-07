@@ -12,57 +12,71 @@
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+  <!--linking to fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Material Design CSS-->
+   <link href="assets/css/material-kit.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
+   <!-- My CSS-->
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script type="text/javascript" src='js/main.js'></script>
  </head>
+
  <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
- <a class="navbar-brand" href="#">Varsha Kori</a>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
+   <!-- navbar -->
 
- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav mr-auto">
-     <li class="nav-item active">
-       <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
-     </li>
-
-     <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Resume
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="#">Education</a>
-         <a class="dropdown-item" href="#">Experience</a>
-         <div class="dropdown-divider"></div>
-         <a class="dropdown-item" href="#">Skills</a>
-       </div>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="#">Design Process</a>
-     </li>
-    <!-- <li class="nav-item">
-       <a class="nav-link disabled" href="#">Disabled</a>
-     </li> -->
-   </ul>
-   <form class="form-inline my-2 my-lg-0">
-     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-   </form>
- </div>
+ <nav class="navbar navbar-expand-lg fixed-top ">
+   <a class="navbar-brand" href="#"><img src="VK Logo-2.png" width="10%" height="10%" style="margin: 10px">Varsha Kori</img></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-4">
+      <li class="nav-item">
+        <a class="nav-link " data-value="experience"href="#">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="education"href="#">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="skills"href="#">Skills</a>
+      </li>
+    <!--  <li class="nav-item">
+         <a class="nav-link" data-value="about" href="#">About</a>
+      </li> -->
+      <!--<li class="nav-item">
+        <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>
+      </li> -->
+    <!--  <li class="nav-item">
+        <a class="nav-link " data-value="blog" href="#">Blog</a>
+      </li> -->
+    <!--  <li class="nav-item">
+        <a class="nav-link " data-value="contact" href="#">Contact</a>
+      </li> -->
+    </ul>
+  </div>
 </nav>
-
+<!--<header class="header">-->
+  <!--<div class="overlay">-->
+    <!--<img src="Varsha-Kori_Banner.png" width="100%"></img>-->
+  <!--</div>-->
+<!--</header>-->
+<!--
 <div class="jumbotron">
  <h1 class="display-4">Hello, world!</h1>
- <p class="lead">I am Varsha Kori, an Interaction Designer with a focus on UX Research, enthusiastic about simplifying user experiences.</p>
+ <p class="lead">I am Varsha Kori, an Interaction Designer with a focus on UX Research, enthusiastic about simplifying user experiences.</p> -->
  <!-- <hr class="my-4"> -->
  <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
- <p class="lead">
+ <!--<p class="lead">
    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
- </p>
- <i class="fas fa-angle-down fa-2x" style="align; color:#212121;"></i>
+ </p>-->
+ <!-- <i class="fas fa-angle-down fa-2x" style="align; color:#212121;"></i>
+</div>
+
+<div class="container">
+  <div class="row">
+    <img src="mypicture.png" alt="Varsha Kori Profile Photo" width="30%" class="center"></img>
+  </div>
 </div>
 
 <div class="container">
@@ -86,8 +100,16 @@
         </div>
 </div>
 
+-->
 
-
+<div class="container">
+  <div class="description ">
+   <h1>    Hello, I'm Varsha Kori.
+    <p>    Interaction Designer with a focus on UX Research, enthusiastic about simplifying user experiences.
+</p>
+ <button class="btn btn-outline-secondary btn-lg">See more</button>   </h1>
+</div>
+</div>
 
 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
