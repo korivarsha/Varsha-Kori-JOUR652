@@ -1,0 +1,51 @@
+#content {
+ margin: 0 auto;
+ width: 900px;
+}
+
+.banner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.byline{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: italic;
+}
+
+h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28pt;
+}
+
+.story{
+  font-family: Georgia, Times, serif;
+  font-size: 13px;
+}
+
+blockquote {
+font: 16px/24px normal helvetica, sans-serif;
+font-style: italic;
+margin-top: 15px;
+margin-bottom: 15px;
+color: red;
+margin-left: 50px;
+padding-left: 15px;
+border-left: 4px solid #ccc;
+}
+
+#published{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  color: #757575;
+}
+
+#author{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  color: #757575;
+}
