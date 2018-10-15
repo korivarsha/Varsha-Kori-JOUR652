@@ -7,110 +7,217 @@
 
  <title>Bootstrap Template</title>
  <meta name="description" content="Varsha Kori Portfolio">
+  <meta name="keywords" content="varsha kori, UI, UX, Interaction, Ix, design, desinger, portfolio, UMD, varsha, kori, college park">
  <meta name="author" content="Varsha Kori">
 
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <!--linking to fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <!-- Material Design CSS-->
-   <link href="assets/css/material-kit.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <!-- My CSS-->
   <link rel="stylesheet" type="text/css" href="mystyle.css">
   <script type="text/javascript" src='js/main.js'></script>
+  <style>
+  html {
+scroll-behavior: smooth;
+}
+</style>
+
  </head>
 
  <body>
    <!-- navbar -->
 
- <nav class="navbar navbar-expand-lg fixed-top ">
-   <a class="navbar-brand" href="#"><img src="VK Logo-2.png" width="10%" height="10%" style="margin: 10px">Varsha Kori</img></a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <nav class="navbar navbar-expand-lg fixed-top">
+
+   <a class="navbar-brand" href="bootstrap-template.html"><img src="VK Logo-2.png" width="10%" height="10%" style="margin: 10px">Varsha Kori</img></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
      <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-4">
+  <div class="collapse navbar-collapse" id="#collapsibleNavbar">
+    <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link " data-value="experience"href="#">Experience</a>
+        <a class="nav-link " data-value="experience"href="#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " data-value="education"href="#">Education</a>
+        <a class="nav-link " data-value="education"href="#education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " data-value="skills"href="#">Skills</a>
+        <a class="nav-link " data-value="skills"href="#skills">Skills</a>
       </li>
-    <!--  <li class="nav-item">
-         <a class="nav-link" data-value="about" href="#">About</a>
-      </li> -->
-      <!--<li class="nav-item">
-        <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>
-      </li> -->
-    <!--  <li class="nav-item">
-        <a class="nav-link " data-value="blog" href="#">Blog</a>
-      </li> -->
-    <!--  <li class="nav-item">
-        <a class="nav-link " data-value="contact" href="#">Contact</a>
-      </li> -->
     </ul>
   </div>
 </nav>
-<!--<header class="header">-->
-  <!--<div class="overlay">-->
-    <!--<img src="Varsha-Kori_Banner.png" width="100%"></img>-->
-  <!--</div>-->
-<!--</header>-->
-<!--
-<div class="jumbotron">
- <h1 class="display-4">Hello, world!</h1>
- <p class="lead">I am Varsha Kori, an Interaction Designer with a focus on UX Research, enthusiastic about simplifying user experiences.</p> -->
- <!-- <hr class="my-4"> -->
- <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
- <!--<p class="lead">
-   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
- </p>-->
- <!-- <i class="fas fa-angle-down fa-2x" style="align; color:#212121;"></i>
-</div>
-
-<div class="container">
-  <div class="row">
-    <img src="mypicture.png" alt="Varsha Kori Profile Photo" width="30%" class="center"></img>
-  </div>
-</div>
-
-<div class="container">
-        <div class="row">
-
-                <div class="col-md-4">
-                        <h3>Heading 1</h3>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                </div>
-
-
-                <div class="col-md-4">
-                        <h3>Heading 2</h3>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
-                </div>
-
-                <div class="col-md-4">
-                        <h3>Heading 3</h3>
-                        <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                </div>
-        </div>
-</div>
-
--->
-
+<header class="header">
 <div class="container">
   <div class="description ">
-   <h1>    Hello, I'm Varsha Kori.
+   <h1>    Hello, I'm Varsha Kori.</h1>
     <p>    Interaction Designer with a focus on UX Research, enthusiastic about simplifying user experiences.
 </p>
- <button class="btn btn-outline-secondary btn-lg">See more</button>   </h1>
+ <a href="#seemore"><button class="btn btn-outline-secondary btn-lg">See more</button></a>
+</div>
+</div>
+</header>
+<div class="container" id="seemore">
+  <div class="row">
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img src="mypicture.png" class="img-fluid">
+
+   </div>
+   <div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+    <h2>About Me</h2>
+    <p>
+       Hello, I am Varsha Kori! My passion for the field of User Experience led me to pursue a graduate study in the same from the University of Maryland, College Park. I am keen on simplifying experiences for the user and designing accessible platforms for everyone. I believe that a good user experience is the one which does not make a user think. I lay emphasis on brainstorming and understanding the user needs during my design process. I want to build products that users want to pay for, share, and come back for, that is, Design Success = User Success = Business Success. </p>
+
+       <p>
+       I love to travel, click pictures, and collect memories. Please feel free to go through my website and browse my background. </p>
+    </p>
+   </div>
+  </div>
+</div>
+<div class="container" id="experience">
+  <h2 style="margin: 50px 0 50px 0;">Experience</h2>
+  <!-- Job 1 -->
+  <div class="row">
+
+  <div class="col-lg-3 col-md-3 col-sm-12"><h4>UX Engineer</h4></div>
+  <div class="col-lg-9 col-md-9 col-sm-12">
+    <h5>Office of Institutional Research, Planning, and Assessment, University of Maryland, College Park, MD</h5>
+
+    <p style="font-style: italic;">May 2019 – Present</p>
+    <p>I am redesigning and developing user-centered university-wide website to serve minimum 50K user base that meets web accessibility guidelines using HTML, CSS, JavaScript. I am also conducting various UX research methods for the same. I am also responsible for data analysis and visualization using Tableau to host the reports on the website.</p>
+  </div>
+  </div>
+<!-- Job 2 -->
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-12"><h4>UI/UX Design Intern</h4>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12">
+<h5>Center for Advanced Transportation Technology Laboratory, College Park, MD</h5>
+
+<p style="font-style: italic;">May 2018 – Aug. 2018</p>
+<p>I designed softwares for National and State level projects to enhance user experience using Adobe Photoshop, Adobe Illustrator and Adobe XD. I also built and tested user interfaces according to client specifications to improve their usability.</p>
 </div>
 </div>
 
+<!-- Job 3 -->
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-12"><h4>UX Analyst Intern</h4>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12">
+<h5>Plexus Professionals Network Private Limited, Ahmedabad, India</h5>
+
+<p style="font-style: italic;">Dec. 2015 – May 2016</p>
+<p>I designed version 2.0 of the website using Sketch, InVision and Sitemapping and also designed 10 email templates for user engagement using Sendy and RED Mailer. I contributed to the company in increasing the number of users by 43%. I improved the strategies and product quality for the end users. I also conducted market research, competitor analysis, business development and customer relationship management, which lead to revenue generation for the clients.</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="container" id="education">
+  <h2 style="margin: 50px 0 50px 0;">Education</h2>
+  <div class="row">
+
+  <div class="col-lg-3 col-md-3 col-sm-12">
+    <img src="umd-logo.jpg" alt="Varsha Kori-UMD logo" height="100px" width="100px" style="margin:10px 100px 10px 100px;"> </img>
+  </div>
+    <div class="col-lg-9 col-md-9 col-sm-12">
+    <h4>University of Maryland, College Park </h4>
+    <p>MS, Information Management (User Experience Specialization)</p>
+    <p>May 2019 (Expected)</p>
+    <p>GPA: 3.96/4.0</p>
+  </div>
+  </div>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-lg-3 col-md-3 col-sm-12">
+      <img src="Dhirubhai_Ambani_Institute_of_Information_and_Communication_Technology.png" alt="Varsha Kori-DAIICT logo" height="100px" width="100px" style="margin:10px 100px 10px 100px;"> </img> </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+      <h4>DA-IICT, Gandhinagar, India </h4>
+      <p>B.Tech, Information and Communication Technology</p>
+      <p>July 2012 - May 2016</p>
+      <p>GPA: 3.34/4.0</p>
+    </div>
+  </div>
+  </div>
+  <div class="container" id="skills">
+      <h2 style="margin: 50px 0 50px 0;">Skills</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12" id="research">
+          <h4> Research </h4>
+          <ul>
+            <li>Persona Creation</li>
+            <li>Heuristic Analysis</li>
+            <li>Prototyping</li>
+            <li>Wireframing</li>
+            <li>Journey Mapping</li>
+            <li>Task Analysis</li>
+            <li>Interaction Design</li>
+            <li>Card Sorting</li>
+            <li>Metrics Analysis</li>
+            <li>Accessibility Analysis</li>
+            <li>Surveys</li>
+            <li>Interviews</li>
+            <li>Quantitative Analysis</li>
+            <li>Qualitative Analysis</li>
+            <li>Usability Testing</li>
+            <li>Comparative Analysis</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12" id="">
+          <h4> Tools </h4>
+
+          <div class="design"><a href="https://www.adobe.com/creativecloud.html"><img src="adobe creative cloud logo.jpeg" alt="Varsha Kori Adobe logo" height="50px" width="50px"></img></a></div>
+          <div class="design"><a href="https://www.sketchapp.com/"><img src="sketch logo.jpg" alt="Varsha Kori Sketch logo" height="50px" width="50px"></img></a></div>
+
+          <div class="design"><a href="https://www.invisionapp.com/"><img src="invision logo.png" alt="Varsha Kori InVision logo" height="50px" width="50px"></img></a></div>
+
+          <div class="design"><a href="https://balsamiq.com/"><img src="balsamiq logo.png" alt="Varsha Kori Balsamiq logo" height="50px" width="50px"></img></a></div>
+
+          <div class="design"><a href="https://products.office.com/en-us/excel"><img src="ms excel logo.jpg" alt="Varsha Kori MS Excel logo" height="50px" width="50px"></img></a></div>
+
+          <div class="design"><a href="https://www.tableau.com/"><img src="tableau logo.jpg" alt="Varsha Kori Tableau logo" height="50px" width="200px"></img></a></div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h4>Languages</h4>
+          <div class="design"><a href="#"><img src="htmlcssjs.jpg" alt="Varsha Kori HTML logo" height="150px" width="200px"></img></a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+
+        <div class="sociallinks">
+          <div><h5>Get in Touch</h5></div>
+          <div><p>Have any suggestion? Or, interested in collaborating on a project? I'd love to connect with you.</p></div>
+          <div class="sendemail"><a href="mailto:varsha.r.kori@gmail.com"><button class="btn btn-outline-secondary btn-lg">Send an email</button></a></div>
+          <div>
+            <span><a href="https://www.linkedin.com/in/varshakori/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
+            <span><a href="https://github.com/korivarsha" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></span>
+          </div>
+          <div><p style="font-size: 14px; margin: 25px">&copy; Varsha Kori</p></div>
+    </div>
+    </div>
+</footer>
 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

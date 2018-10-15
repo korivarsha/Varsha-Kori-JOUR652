@@ -1,35 +1,69 @@
+body {
+  padding-top: 60%;
+}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+#seemore{
+  padding-top:100px;
+}
 
-/*.navbar {background-color: #f4f4f4}*/
-.nav-link , .navbar-brand{ color: #333; cursor: pointer;}
-.navbar-brand:hover{ color: #1769ff; }
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ color: #1769ff; }
-.navbar-collapse{ justify-content: flex-end;}
-/*.navbar-toggler{  background:#fff !important;}*/
+#experience{
+  padding-top:20px;
+}
+
+#education{
+  padding: 60px 0 60px 0;
+}
+#skills{
+  padding: 20px;
+}
+
+
+.navbar {
+  background-color: white;
+  position:fixed;
+}
+.nav-link , .navbar-brand{
+  color: #1769ff;
+  cursor: pointer;
+}
+.navbar-brand:hover{
+  color: #333;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+.nav-link:hover{
+  color: #333;
+}
+.navbar-collapse{
+  justify-content:
+  flex-end;
+}
+.navbar-fixed-top {
+  position: absolute!important;
+}
+.navbar-toggle
+{
+    position:relative;
+    float:right;
+    padding:9px 10px;
+    margin-top:8px;
+    margin-right:15px;
+    margin-bottom:8px;
+    background-color:transparent;
+    background-image:none;
+    border:1px solid #444;          /* added line */
+    border-radius:4px
+}
 
 /*header style*/
 .header{
- /*background-image: url('/Users/varshakori/Documents/GitHub/Varsha-Kori-JOUR652/resume/Varsha-Kori_Banner.png');*/
- background-attachment: fixed;
- background-size: cover;
- background-position: center;
- margin: auto;
- padding: auto;
-}
-
-.overlay{
- position: absolute;
- min-height: 100%;
- min-width: 100%;
- left: 0;
- top: 0;
- background: rgba(244, 244, 244, 0.79);
+  background-color: white;
 }
 
 .description{
@@ -91,4 +125,50 @@
 .about .desc p{
  line-height:2;
  color:#888;
+}
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+.sociallinks{
+  color: #333;
+  text-align: center;
+  padding: 25px;
+}
+.sendemail button{
+ border:1px  solid #1769ff;
+ border-radius: 50px;
+ background:#1769ff;
+ color:#fff;
+margin-bottom: 25px;
+}
+.sendemail button:hover{
+  border:2px  solid #1769ff;
+  border-radius: 50px;
+  background:#eee;
+  color:#1769ff;
+margin-bottom: 25px;
+}
+.fa-linkedin{
+  color: #0078ba;
+  margin-right: 5px;
+}
+.fa-linkedin:hover{
+  opacity: 0.7;
+  margin-right: 5px;
+}
+.fa-github-square{
+  color: #232930;
+  margin-left: 5px;
+}
+.fa-github-square:hover{
+  opacity: 0.7;
+  margin-left: 5px;
+}
+.design{
+  margin: 10px;
+}
+.design a:hover{
+  opacity:0.7;
 }
