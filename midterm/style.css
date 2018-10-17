@@ -3,6 +3,18 @@ body{
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
+h1{
+  font-size: 20pt;
+  color: #333;
+}
+h2{
+  font-size: 16pt;
+  color: #424242;
+}
+h3{
+  font-size:14pt;
+  color: #424242;
+}
 
 /*style for byline*/
 .byline{
@@ -28,8 +40,8 @@ border-left: 4px solid #1DE9B6;
 }
 
 .story{
-  margin-top:2%;
-  margin-bottom: 2%;
+  padding-top:0.5%;
+  padding-bottom: 0.5%;
 }
 
 .questions{
@@ -38,8 +50,8 @@ border-left: 4px solid #1DE9B6;
 }
 
 .relateditems{
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .userinfo{
@@ -48,8 +60,8 @@ border-left: 4px solid #1DE9B6;
 }
 
 .description{
-  margin-top:4%;
-  margin-bottom: 4%;
+  padding-top:1%;
+  padding-bottom: 1%;
 }
 a:link{
   text-decoration:none;
@@ -59,4 +71,5 @@ a:hover{
 }
 a:visited{
   text-decoration:none;
+
 }
