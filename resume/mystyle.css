@@ -1,179 +1,210 @@
 body {
-
   font-family: 'Roboto', sans-serif;
 }
+
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#seemore{
-  padding-top:100px;
+#seemore {
+  padding-top: 100px;
 }
 
-#experience{
-  padding-top:20px;
+#experience {
+  padding-top: 20px;
 }
 
-#education{
+#education {
   padding: 20px;
 }
-#skills{
+
+#skills {
   padding: 20px;
 }
-#ixd{
+
+#ixd {
   color: #FF3D00;
 }
-#ixd-hover{
+
+#ixd-hover {
   color: #333;
 }
 
 .navbar {
   background-color: white;
-  position:fixed;
+  position: fixed;
 }
-.nav-link , .navbar-brand{
+
+.nav-link,
+.navbar-brand {
   color: #1769ff;
   cursor: pointer;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
   color: #333;
 }
-.nav-link{
+
+.nav-link {
   margin-right: 1em !important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: #333;
 }
-.navbar-collapse{
-  justify-content:
-  flex-end;
+
+.navbar-collapse {
+  justify-content: flex-end;
 }
+
 .navbar-fixed-top {
-  position: absolute!important;
+  position: absolute !important;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1769ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 .navbar-toggler {
   border-color: #1769ff;
 }
 
 /*header style*/
-.header{
+
+.header {
   padding-top: 15%;
   background-color: white;
 }
 
-.description{
-    position: relative;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-}
-.description h1{
- color:#333 ;
-}
-.description p{
- color:#333;
- font-size: 25px;
- width: 100%;
- line-height: 2;
-}
-.description button{
- border:1px  solid #1769ff;
- border-radius: 50px;
- background:#1769ff;
- color:#fff;
+.description {
+  position: relative;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
 }
 
-.description button:hover{
-  border:2px  solid #1769ff;
+.description h1 {
+  color: #333;
+}
+
+.description p {
+  color: #333;
+  font-size: 25px;
+  width: 100%;
+  line-height: 2;
+}
+
+.description button {
+  border: 1px solid #1769ff;
   border-radius: 50px;
-  background:#fff;
-  color:#1769ff;
+  background: #1769ff;
+  color: #fff;
 }
 
-.about{
- margin: 4em 0;
- padding: 1em;
- position: relative;
+.description button:hover {
+  border: 2px solid #1769ff;
+  border-radius: 50px;
+  background: #fff;
+  color: #1769ff;
 }
-.about h1{
- color:#F97300;
- margin: 2em;
+
+.about {
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
 }
-.about img{
- height: 100%;
-    width: 100%;
-    border-radius: 50%
+
+.about h1 {
+  color: #F97300;
+  margin: 2em;
 }
-.about span{
- display: block;
- color: #888;
- position: absolute;
- left: 115px;
+
+.about img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%
 }
-.about .desc{
- padding: 2em;
- border-left:4px solid #10828C;
+
+.about span {
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 115px;
 }
-.about .desc h3{
- color: #10828C;
+
+.about .desc {
+  padding: 2em;
+  border-left: 4px solid #10828C;
 }
-.about .desc p{
- line-height:2;
- color:#888;
+
+.about .desc h3 {
+  color: #10828C;
 }
-footer{
-    height: 350px;
-    width: 100%;
-    background-color: #EEEEEE;
+
+.about .desc p {
+  line-height: 2;
+  color: #888;
 }
-.sociallinks{
+
+footer {
+  height: 350px;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.sociallinks {
   color: #333;
   text-align: center;
   padding: 25px;
 }
-.sendemail button{
- border:1px  solid #1769ff;
- border-radius: 50px;
- background:#1769ff;
- color:#fff;
-margin-bottom: 25px;
-}
-.sendemail button:hover{
-  border:2px  solid #1769ff;
+
+.sendemail button {
+  border: 1px solid #1769ff;
   border-radius: 50px;
-  background:#eee;
-  color:#1769ff;
-margin-bottom: 25px;
+  background: #1769ff;
+  color: #fff;
+  margin-bottom: 25px;
 }
-.fa-linkedin{
+
+.sendemail button:hover {
+  border: 2px solid #1769ff;
+  border-radius: 50px;
+  background: #eee;
+  color: #1769ff;
+  margin-bottom: 25px;
+}
+
+.fa-linkedin {
   color: #0078ba;
   margin-right: 5px;
 }
-.fa-linkedin:hover{
+
+.fa-linkedin:hover {
   opacity: 0.7;
   margin-right: 5px;
 }
-.fa-github-square{
+
+.fa-github-square {
   color: #232930;
   margin-left: 5px;
 }
-.fa-github-square:hover{
+
+.fa-github-square:hover {
   opacity: 0.7;
   margin-left: 5px;
 }
-.design{
+
+.design {
   margin: 3%;
 }
-.design a:hover{
-  opacity:0.7;
+
+.design a:hover {
+  opacity: 0.7;
 }
-.timeline{
+
+.timeline {
   color: #78909C;
   font-family: 'Courier New', serif;
   text-transform: uppercase;
