@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,88 +14,121 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+    <!-- Load our CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navbar starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- navbar ends -->
 
-<div  id="container">
-    <h1>The Headline Goes Here</h1>
-    <p id="byline">  by byline </P>
+    <!-- text starts-->
+    <div id="container">
+      <!-- the headline of the story -->
+      <h1>The Headline Goes Here</h1>
+      <p id="byline"> by byline </p>
 
-    <h2>Chapter Headline</h2>
-    <div class="story">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in eleifend nulla. Phasellus metus tortor, blandit eu quam sed, fringilla maximus metus. Proin ut egestas tellus. Donec porta, sem nec tincidunt aliquet, dui ligula tincidunt quam, sit amet accumsan nisi purus vel velit. Donec consectetur ipsum finibus erat pharetra, in tincidunt erat semper. Vestibulum quis risus tempus urna pharetra convallis vel eget diam. Vestibulum posuere, augue ac euismod ornare, erat ligula sodales ligula, ut maximus dui neque nec felis. In hac habitasse platea dictumst.</p>
-    </div>
-    <div>
+      <!-- chapter headline -->
+      <h2>Chapter Headline</h2>
+      <div class="story">
+        <!-- main text of the story starts -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in eleifend nulla. Phasellus metus tortor, blandit eu quam sed, fringilla maximus metus. Proin ut egestas tellus. Donec porta, sem nec tincidunt aliquet, dui ligula tincidunt quam, sit
+          amet accumsan nisi purus vel velit. Donec consectetur ipsum finibus erat pharetra, in tincidunt erat semper. Vestibulum quis risus tempus urna pharetra convallis vel eget diam. Vestibulum posuere, augue ac euismod ornare, erat ligula sodales
+          ligula, ut maximus dui neque nec felis. In hac habitasse platea dictumst.</p>
+      </div>
+      <div>
+        <!-- image in the story -->
         <img src="jupiter.jpg" alt="Jupiter image" height="70%" width="70%" id="picture" />
+        <!-- caption of the image -->
         <p id="caption">caption: insert image or video or graphic or whatever above</p>
+      </div>
+      <div class="story">
+        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed convallis ex volutpat, fermentum erat non, cursus turpis. Vestibulum vel est erat. Donec ornare varius nibh vitae placerat. Aliquam ac dignissim magna.
+          Quisque luctus lacus velit, non rhoncus nunc luctus pharetra. Vivamus gravida, elit ac eleifend varius, dui nunc aliquam orci, non pretium urna leo at erat.</p>
+
+        <p>Donec vel lectus porta, euismod nunc at, dapibus dolor. Donec mollis nisi rutrum sagittis viverra. Mauris scelerisque eget ipsum et hendrerit. Etiam posuere quis lorem non egestas. Vivamus nec massa nec lectus gravida elementum. Nam condimentum,
+          metus et fringilla suscipit, lorem sapien tincidunt justo, id blandit dolor dui a velit. Nullam lacinia accumsan sapien, et molestie nunc aliquam sed. Vivamus ultrices nibh ac leo efficitur efficitur. Proin pulvinar elementum maximus. Phasellus
+          sit amet tempus odio.</p>
+
+        <p>Pellentesque mattis sed augue et tincidunt. Nulla et finibus risus, quis blandit metus. Donec sed ex et erat ultricies congue. Morbi vulputate, libero et varius ultricies, dui enim pharetra ipsum, vel pretium lacus tortor eget leo. Sed pharetra
+          lorem non ante euismod consequat eget quis sapien. Quisque ac augue tincidunt, porta ex et, sollicitudin tellus. Aenean facilisis turpis a nisl tempus consequat. Phasellus at sem nec ante ultricies fringilla vel id libero. Vestibulum ornare
+          tincidunt ipsum, quis porttitor mauris consequat ac.</p>
+
+        <p>Pellentesque faucibus est id enim imperdiet, et tristique erat consectetur. Duis aliquet, turpis non viverra fringilla, massa orci consequat ipsum, eu iaculis purus mi in ex. Phasellus lacinia dapibus elit sed maximus. Mauris et lectus non ligula
+          posuere fermentum ac lobortis magna. Maecenas sit amet nunc quam. Sed id justo id enim lacinia ornare. Donec ac enim eu eros tempor tempor id vehicula erat.</p>
+
+        <!-- three columns start-->
+        <div class="container" id="column">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
+            <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
+            <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
+          </div>
+        </div>
+        <!-- three columns end -->
+      </div>
     </div>
-    <div class="story">
-    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed convallis ex volutpat, fermentum erat non, cursus turpis. Vestibulum vel est erat. Donec ornare varius nibh vitae placerat. Aliquam ac dignissim magna. Quisque luctus lacus velit, non rhoncus nunc luctus pharetra. Vivamus gravida, elit ac eleifend varius, dui nunc aliquam orci, non pretium urna leo at erat.</p>
+    <!-- main text of the story ends -->
+    <!-- text ends -->
+    <!-- footer section starts-->
+    <div id="footer">
+      <div class="container">
 
-    <p>Donec vel lectus porta, euismod nunc at, dapibus dolor. Donec mollis nisi rutrum sagittis viverra. Mauris scelerisque eget ipsum et hendrerit. Etiam posuere quis lorem non egestas. Vivamus nec massa nec lectus gravida elementum. Nam condimentum, metus et fringilla suscipit, lorem sapien tincidunt justo, id blandit dolor dui a velit. Nullam lacinia accumsan sapien, et molestie nunc aliquam sed. Vivamus ultrices nibh ac leo efficitur efficitur. Proin pulvinar elementum maximus. Phasellus sit amet tempus odio.</p>
-
-    <p>Pellentesque mattis sed augue et tincidunt. Nulla et finibus risus, quis blandit metus. Donec sed ex et erat ultricies congue. Morbi vulputate, libero et varius ultricies, dui enim pharetra ipsum, vel pretium lacus tortor eget leo. Sed pharetra lorem non ante euismod consequat eget quis sapien. Quisque ac augue tincidunt, porta ex et, sollicitudin tellus. Aenean facilisis turpis a nisl tempus consequat. Phasellus at sem nec ante ultricies fringilla vel id libero. Vestibulum ornare tincidunt ipsum, quis porttitor mauris consequat ac.</p>
-
-    <p>Pellentesque faucibus est id enim imperdiet, et tristique erat consectetur. Duis aliquet, turpis non viverra fringilla, massa orci consequat ipsum, eu iaculis purus mi in ex. Phasellus lacinia dapibus elit sed maximus. Mauris et lectus non ligula posuere fermentum ac lobortis magna. Maecenas sit amet nunc quam. Sed id justo id enim lacinia ornare. Donec ac enim eu eros tempor tempor id vehicula erat.</p>
-
-  <div class="container" style="padding-bottom:100px;">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
-      <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
-      <div class="col-lg-4 col-md-4 col-sm-12">One of three columns</div>
+        <p id="footertext">Footer Text
+          <p>
+            <p id="copyright">&copy; Varsha Kori 2018</p>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-<!-- footer section -->
-<div id="footer">
-  <div class="container">
+    <!-- footer ends -->
 
-        <p style="padding: 30px;">Footer Text<p>
-        <p style="font-size:14px;padding-bottom: 5px;">&copy; Varsha Kori 2018</p>
-  </div>
-</div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
-  </body>
+
 </html>
