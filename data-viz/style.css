@@ -1,0 +1,58 @@
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#byline {
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#picture {
+  display: block;
+  margin: 0 auto;
+}
+
+#caption {
+  font-size: 14px;
+  text-align: center;
+  color: #9E9E9E;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.story {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#footer {
+  background: #333;
+  text-align: center;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#column {
+  padding-bottom: 100px;
+}
+
+#footertext {
+  padding: 30px;
+}
+
+#copyright {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
