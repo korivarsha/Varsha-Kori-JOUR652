@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Technology - Transforming Lives of People with Disabilities</title>
+
+    <meta name="description" content="Bootstrap template">
+    <meta name="author" content="Varsha Kori">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+    <!-- Load our CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- navbar starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+
+
+    <div class="container">
+
+      <h1>Technology - Transforming Lives of People with Disabilities</h1>
+      <p id="byline">By Varsha Kori </p>
+      <!-- first graphic container-->
+      <div class="graphic-container">
+        <h4>How prevalent is any disability in people of all ages in the US?</h4>
+        <p>The graph below shows that disability in the US was prevalent in 12.8% of the population of all ages. Of the 12.8%, the prevalence of the six disability types among them was Visual Disability - 2.4%, Hearing Disability - 3.6%, Ambulatory Disability - 7.1%, Cognitive Disability - 5.2%, Self-Care Disability - 2.7%, Independent Living Disability - 5.7%.</p>
+        <div id="disabilityType"></div>
+        <em>Source: 2016 Disability Status Report by Cornell University</em>
+      </div>
+      <br><br>
+
+      <!-- second graphic container-->
+      <div class="graphic-container">
+        <h4>Disability by Gender</h4>
+        <p>Disability was reported equally in both females (21,087,300) and males (19,803,600) of all ages as shown in the graph below. </p>
+        <div id="disabilityGender"></div>
+        <em>Source: 2016 Disability Status Report by Cornell University</em>
+      </div>
+      <br><br>
+
+      <!-- third graphic container-->
+      <div class="graphic-container">
+        <h4>Employment of working-age people (ages 21 to 64) by disability status in the United States in 2016</h4>
+        <p>The rate of employment of working-age people (ages 21 to 64) with any disability in the US was 36.2%, and people with ambulatory disability had the highest rate of employment, as can be seen below.
+        <div id="disabilityEmployment"></div>
+        <em>Source: 2016 Disability Status Report by Cornell University</em>
+      </div>
+      <br><br>
+
+      <!-- fourth graphic container-->
+      <div class="graphic-container">
+        <h4>Median annual earnings of working-age people (ages 21 to 64) who work full-time/full-year by disability status in the United States in 2016 in USD</h4>
+        <p>Only 23% of the people which had any disability were working full-time/full-year with the median annual earning of only $40,300.</p>
+        <div id="disabilityEarnings"></div>
+        <em>Source: 2016 Disability Status Report by Cornell University</em>
+      </div>
+      <br><br>
+
+      <!-- fifth graphic container-->
+      <div class="graphic-container">
+        <h4>Education Level of People with Disabilities</h4>
+        <p>Only 18% of the people with any disability have earned a bachelor degree or more. Almost an equal percentage of people have attended only a high school diploma or equivalent (42.7%) and only some college or an associate degree (39.3%).</p>
+        <div id="disabilityEducation"></div>
+        <em>Source: 2016 Disability Status Report by Cornell University</em>
+      </div>
+      <br><br>
+
+      <!-- Knightlab Timeline -->
+      <h4>Assistive Technology Timeline </h4>
+      <p>The Timeline below shows the some of the advancements and milestones in assistive technology over the past 3 decades.</p>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1GYl35qlvQ0gad24jgfRQLjpxxwWnqwefSEjzyNyCGow&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+      <br><br>
+
+      <!-- Google Fusion Map -->
+      <h4>Assistive Technology Map</h4>
+      <p>The world map below shows the locations of the birth of some of the assistive technologies. Click on a location to read more.</p>
+    <iframe width="1100" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+1bmo4neUJFM6mQ0qiCl5_qgBhYz2A4e7s7YmpWsjr&amp;viz=MAP&amp;h=false&amp;lat=43.61221676817573&amp;lng=-82.9248046875&amp;t=1&amp;z=2&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+    <br><br>
+    </div>
+<br><br>
+    <!-- footer section starts-->
+    <div id="footer">
+      <div class="container">
+
+        <p id="footertext">JOUR652 Data Visualization Assignment
+          <p>
+            <p id="copyright">&copy; Varsha Kori 2018</p>
+      </div>
+    </div>
+    <!-- footer ends -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- c3 Script -->
+    <script type="text/javascript">
+
+      //chart 1
+      var chart1 = c3.generate({
+        bindto: '#disabilityType',
+        data: {
+          columns: [
+            ['Any Disability', 40890900],
+            ['Visual Disability', 7675600],
+            ['Hearing Disability', 11445600 ],
+            ['Ambulatory Disability', 21246400],
+            ['Cognitive Disability',  15507300 ],
+            ['Self-Care Disability', 8134300],
+            ['Independent Living Disability', 14788800],
+
+          ],
+          type: 'bar'
+        },
+        color: {
+          pattern: ['#EFEE69', '#9DDC79', '#59C28F', '#31A49B', '#3E8295', '#53607C', '#564058','#603129']
+        }
+      });
+
+      //chart 2
+      var chart2 = c3.generate({
+        bindto: '#disabilityGender',
+        data: {
+          columns: [
+            ['Female', 21087300 ],
+            ['Male', 19803600  ],
+
+          ],
+          type: 'donut'
+        },
+        color: {
+          pattern: ['#3E8295','#9DDC79']
+        }
+      });
+
+      //chart 3
+      var chart3 = c3.generate({
+        bindto: '#disabilityEmployment',
+        data: {
+          columns: [
+            ['Any Disability', 7262500],
+            ['Visual Disability', 1658600,43000],
+            ['Hearing Disability', 2051300],
+            ['Ambulatory Disability', 2493800],
+            ['Cognitive Disability', 2218300 ],
+            ['Self-Care Disability', 552500],
+            ['Independent Living Disability', 1221200],
+
+          ],
+          type: 'bar'
+        },
+
+        color: {
+          pattern: ['#EFEE69', '#9DDC79', '#59C28F', '#31A49B', '#3E8295', '#53607C', '#564058','#603129']
+        }
+      });
+
+      //chart 4
+      var chart4 = c3.generate({
+      bindto: '#disabilityEarnings',
+      data: {
+       columns: [
+         ['No Disability', 45300],
+         ['Any Disability', 40300 ],
+         ['Visual Disability', 38500],
+         ['Hearing Disability', 46300],
+         ['Ambulatory Disability', 39300],
+         ['Cognitive Disability', 35000 ],
+         ['Self-Care Disability', 38300],
+         ['Independent Living Disability', 35300],
+       ],
+      type: 'bar'
+      },
+      color: {
+       pattern: ['#EFEE69', '#9DDC79', '#59C28F', '#31A49B', '#3E8295', '#53607C', '#564058','#603129']
+      }
+      });
+
+      //chart 5
+      var chart5 = c3.generate({
+     bindto: '#disabilityEducation',
+     data: {
+       columns: [
+         ['High School Diploma or Equivalent', 6849800 ],
+         ['Some College or an Associate Degree', 6313900],
+         ['Bachelor Degree or More', 2890200]
+       ],
+     type: 'pie'
+   },
+     color: {
+      pattern: ['#9DDC79', '#3E8295', '#564058']
+     }
+   });
+
+
+    </script>
+
+  </body>
+
+</html>
