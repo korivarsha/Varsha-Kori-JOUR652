@@ -49,6 +49,7 @@ ul.navbar-nav {
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   font-weight: 700;
+  text-align: center;
 }
 .subheading{
   font-family: 'Montserrat', sans-serif;
@@ -65,13 +66,17 @@ ul.navbar-nav {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-h1 {
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
 
 h2 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  width:100%;
+}
+.chapterlogo{
+  height: 15px;
+  width: 15px;
 }
 
 #picture {
@@ -88,11 +93,11 @@ h2 {
 
 #footer {
   background: #000;
-  margin:0 auto;
-  color: #fff;
+  color: black;
   height: 100px;
-  padding:25px;
+  padding: 25px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 #column {
@@ -102,6 +107,9 @@ h2 {
 #copyright {
   font-size: 14px;
   padding-bottom: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
 }
 a{
   text-decoration: none;
@@ -112,4 +120,56 @@ a:hover{
 }
 a:visited{
   color:#999;
+}
+.stack-image{
+width:50%;
+height:50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top:30px;
+}
+.caption{
+ width:50%;
+ height: 50%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom:30px;
+ font-family: 'Montserrat', sans-serif;
+ color:#999;
+}
+.graphic-container h2{
+  font-size: 2em;
+}
+.graphic-container {
+ padding-top:30px;
+ padding-bottom:30px;
+ border-top:1px solid #cdcdcd;
+ border-bottom:1px solid #cdcdcd;
+ font-family: 'Montserrat', sans-serif;
+ margin:0 auto;
+}
+
+.cite{
+  color: grey;
+}
+p{
+  font-family: 'PT Serif', serif;
+  color: black;
+  font-size: 1em;
+}
+#graphicheading{
+  color:grey;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+#graphiccontent{
+  font-family: 'Montserrat', sans-serif;
+}
+#source{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-style: italic;
 }
