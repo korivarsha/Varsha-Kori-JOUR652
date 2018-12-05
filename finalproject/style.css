@@ -25,6 +25,7 @@ p{
 
 .green {
  color: #88df6b;
+ font-size: 3.5em;
 }
 .bg-dark {
  background:#2b3b51 !important;
@@ -46,21 +47,26 @@ ul.navbar-nav {
   width: 15px;
   margin-right: 5px;
 }
-.heroimage{
-  width:50%;
-  height:50%;
-  padding: 3%;
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
 }
-.hero{
-  text-align: center;
-}
-.heading{
+.hero h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
 }
-.subheading{
+.hero p{
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
