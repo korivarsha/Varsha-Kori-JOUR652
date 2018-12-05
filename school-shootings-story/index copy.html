@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>An American Tragedy</title>
+
+    <meta name="description" content="School Shootings Story">
+    <meta name="author" content="Varsha Kori">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+    <!-- Load our CSS -->
+    <link rel="stylesheet" href="style copy.css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navbar starts-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="#"><img src="star-red.png" alt="Red Star Logo" class="logo"></a>
+      <a href="#"><img src="star-blue.png" alt="Blue Star Logo" class="logo"></a>
+      <a class="navbar-brand" href="#" id="logotext">An American Tragedy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#whereAndWhen">Where & When</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#theCarnage">The Carnage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aProfile">A Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+    <div class="hero">
+    <img src="hero-image.jpg" alt="Hero Image" class="heroimage">
+    </div>
+    <!-- text starts-->
+    <div id="container">
+      <!-- the headline of the story -->
+      <h1 class="heading">An <span class="blue">American</span> Tragedy</h1>
+      <p class="subheading"><strong>Over 200 school shootings in two decades. <br>What have we learned?</strong></p>
+      <div class="star">
+        <img src="star-red.png" alt="Red Star Image" class="logo">
+        <img src="star-blue.png" alt="Blue Star Image" class="logo">
+        <img src="star-red.png" alt="Red Star Image" class="logo">
+        <img src="star-blue.png" alt="Blue Star Image" class="logo">
+      </div>
+
+      <div>
+        <p class="introtext">In 1999, two young men killed 12 students and wounded 24 others at Columbine High School in Littleton, Colorado. The incident sparked a long series of school shootings in the United States that has continues to this day. Not a single year has passed since 1999 without at least five school shootings in the U.S. There have been at least 214 school shootings since Columbine, according to newly released <span class="cite">data by The Washington Post</span> that examines school shootings at secondary and primary schools in the U.S since the Columbine shooting.</p>
+        <img src="alaina-petty.jpg" alt="School Shooting Survivor Image" class="stack-image">
+        <p class="caption">Alaina Petty, 14. Marjory Stoneman Douglas High School shooting victim. Photo from CNN.</p>
+      </div>
+      <!-- chapter headline -->
+      <div class="row2">
+          <h2><img src="star-blue.png" alt="Blue Star Chapter Title Image" class="chapterlogo">
+          <img src="star-red.png" alt="Red Star Chapter Image" class="chapterlogo" id="whereAndWhen">School shootings happen all over the U.S.</h2>
+
+      <!-- main text of the story starts -->
+        <p>School shootings have occured all over the United States, as seen in the map below. In general, higher population areas have seen more incidents, with shootings clustered on the east and west coasts. California, which is the most populous state in the country, had 27 school shooting incidents since 1999, the most of any state. The next highest state was Florida with 16 school shootings since 1999.</p>
+
+
+        <p>At least five school school shootings have occurred every year since 1999, with an average number of 11 shootings per-year.  2006 and 2014 had the highest number of incidents with fifteen and sixteen school shootings, respectively. As can be seen the chart below, the past three years have remained consistently high, with at least a dozen incidents each year.</p>
+
+                <!-- Graphic container-->
+        <div class="graphic-container">
+          <p class="graphic-heading">Shootings by year</p>
+          <p class="graphic-text">The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+          <div id="shootingsByYearChart"></div>
+          <span>Source: Data collected by The Washington Post</span>
+        </div>
+        <!-- END graphic container-->
+
+        <div class="graphic-container">
+          <h4 style="text-align:center;">School Shootings Map</h4>
+          <p class="graphic-text"style="text-align:center;">This map displays every school shooting incident in the United States sincd Columbine</p>
+          <iframe width="1000" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1slYiQw-z6ShvNMAK6aZPjYOYtlcNMQ3_A_Q-it6v&amp;viz=MAP&amp;h=false&amp;lat=37.423&amp;lng=-122.084&amp;t=1&amp;z=3&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=ONE_COL_LAT_LNG"></iframe>
+          <span>Source: Data collected by the Washington Post </span>
+        </div>
+        <br><br>
+
+        <p>An analysis of the data shows that cities with the most number of school shootings tend to be large urban areas with high crime rates. Chicago, Los Angeles and Philadelphia top the list with five school shootings each. The data also reveals that the majority of shootings occur in places that would be considered “cities”, while just 14% occur in rural areas.</p>
+
+        <p>Almost all school shootings occur at public schools. According to the data collected by the Washington Post, only 5% of school shootings since 1999 have occured at a private school.</p>
+
+        <h2><img src="star-blue.png" alt="Blue Star Chapter Title Image" class="chapterlogo">
+        <img src="star-red.png" alt="Red Star Chapter Image" class="chapterlogo" id="theCarnage">The carnage of school shootings</h2>
+        <p>131 people have been killed in school shooting incidents in the United States since the Columbine massacre in 1999. The two deadliest years since have been 2012, when 26 people were killed at Sandy Hook Elementary School, and 2018, when 21 people were killed at Parkland High School. The chart below compared the number of people killed, the number of the people injured and the number of incidents by year since 1999.</p>
+      <div class="graphic-container">
+        <p class="graphic-heading">Examining the carnage</p>
+        <p class="graphic-text"> 2012 was the deadliest year this century,with 32 fatalities. Incidents occured at Sandy Hook Elementary School in Newton, Conn and Oikos University in Oakland, Calif. that year.</p>
+        <div id="killedByYearChart"></div>
+        <span>Source: Data collected by The Washington Post</span>
+      </div>
+
+      <p>A school resource officer was not present at the vast majority of school shooting incidents. According to the Washington Post data, officers were present in only 35 percent of incidents.</p>
+
+      <p>The presence of a school resource officer is widely seen as a positive security measure, though has produced mixed results in the past. A single school resource officer is credited with stopping an incident at a Great Falls High School in Maryland in 2018 after firing at the shooter. A school resource officer was widely criticized, and later resigned, for his behavior during the Parkland High School shooting in 2018, when he was accused of staying outside of the school during the rampage.</p>
+
+      <p>Most school shootings are targeted, seeking to harm a specific individual or group. Over 60% of shootings fall into this category, followed by indiscriminate shootings and accidental. See the chart below for more details.</p>
+
+      <div class="graphic-container">
+        <p class="graphic-heading">Shootings by Type</p>
+        <p class="graphic-text">Targeted shooting are by far the most common, accounting for over 60 percent of school shootings by type.</p>
+        <div id="shootingsByTypeChart"></div>
+        <span>Source: Data collected by The Washington Post</span>
+      </div>
+      <p>The surviving victims of school shootings are increasingly putting pressure on state and national legislators to pass stricter gun control laws and take action on mass shootings.</p>
+      <p>The survivors of Majory Stoneman Douglas High School shooting have come out on the national stage as a driving force promoting the passage of a new gun legislation to protect against future school shootings.</p>
+      <img src="Witt-Florida-Rally.jpg" alt="People Magazine photo for gun control rally" class="stack-image">
+      <p class="caption">Emma Gonzalez, a senior at Marjory Stoneman Douglas High School, speaks at a rally for gun control. Photo from People Magazine.</p>
+
+      <h2><img src="star-blue.png" alt="Blue Star Chapter Title Image" class="chapterlogo">
+      <img src="star-red.png" alt="Red Star Chapter Image" class="chapterlogo" id="aProfile">A profile of the shooters</h2>
+
+      <p>The vast majority of school shooters are young white men.</p>
+
+      <p>According to the data collected by the Post, 95 percent of school shooters were male. Similarly, most shooters were white; 55 percent of school shooters were white and 33 percent were black, as seen in the chart below. The average age of school shooters is 19 years old. Four of the school shooters were under 10-years-old and fourteen were over 40. Most shooters were students or former students of the school where the shooting occured.</p>
+
+      <div class="graphic-container">
+        <p class="graphic-heading">What race are school shooters likely to be?</p>
+        <p class="graphic-text">55 percent of school shooters are white.</p>
+        <div id="shooterRaceChart"></div>
+        <span>Source: Data collected by The Washington Post</span>
+      </div>
+
+      <p>Beyond them demographic profiles, there is debate about the common characteristics of school shooters. For example, though mental illness and childhood abuse are often cited as causes, the exact role these issues play is widely debated. One common characteristic, according to an FBI report about school shooters, is that shooters share their plans with at least one other person in around 80 percent of cases.</p>
+
+      <p>Dr. George S. Everly, Jr. of the Johns Hopkins School of Medicine says that shooters are often motivated by anger and revenge. They tend to be socially awkward, isolated and suffer from a lack of adult supervision. He also spoke of the effects of media contagion, or copycat killings, on school shooters.</p>
+
+      <h2><img src="star-blue.png" alt="Blue Star Chapter Title Image" class="chapterlogo">
+      <img src="star-red.png" alt="Red Star Chapter Image" class="chapterlogo">The deadliest school shootings in America</h2>
+
+      <p>The two most deadly shootings in modern American history occurred within the last few years. The Sandy Hook Elementary School shooting killed 26 people. The shooting at Marjory Stoneman Douglas High School killed 17. The deadliest school shooting in U.S. history occurred in 1927 in Bath Township, Michigan when a school board treasurer killed 38 elementary school students and six adults.</p>
+
+      <div class="graphic-container">
+        <p class="graphic-heading">Timeline: Worst School Shootings Since Columbine</p>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1nuYo63zAYVO_d5Fp61qg-51sKh_I6bewSuYw_BHILh8&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        <span>Source: The Washington Post, Stanford University</span>
+      </div>
+      <br><br>
+      <div id="about">
+        <div id="wrapper">
+          <b class="source">About the data</b>
+          <br><br>
+          <p class="source">School shooting data is surprisingly messy and hard to come by. There are few government or academic studies on the subject and those that do exist are mostly outdated. Further, school shooting data tends to be messy and hard to deal with. According to <span style="color:grey;">The Atlantic</span>, the parameters of school shooting incidents makes data inconsistent. The sources listed in this story are below.</p>
+          <p class="source-grey">Washington Post School Shootings Data</p>
+          <p class="source-red">Stanford Mass Shootings in America Data</p>
+          <p class="source-grey">Why school shooting data is messy</p>
+          <p class="source-red">Implications for the Prevention of School Attacks in the United States</p>
+          <p class="source-red">Profiling school shooters</p>
+        </div>
+    </div>
+    <img src="joaquin-oliver.jpg" alt="People Magazine photo for gun control rally" class="stack-image">
+    <p class="caption">Joaquin Oliver, Marjory Stoneman Douglas High School shooting victim. Photo from Sun Sentinel.</p>
+      </div>
+    </div>
+    <!-- main text of the story ends -->
+    <!-- text ends -->
+    <!-- footer section starts-->
+    <div id="footer">
+      <div class="container">
+              <p style="text-align: center; color:white; font-family:'Montserrat', sans-serif;">JOUR652 School Shootings Story Assignment</p>
+            <p id="copyright">&copy; Varsha Kori 2018</p>
+      </div>
+    </div>
+    <!-- footer ends -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- c3 script-->
+    <script>
+    //CHART 1
+    var chart = c3.generate({
+     bindto: '#shootingsByYearChart',
+     data: {
+       x: 'x',
+       columns: [
+         ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+         ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+       ]
+     },
+     color: {
+       pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+     }
+    });
+
+    var chart = c3.generate({
+      bindto: '#killedByYearChart',
+      data: {
+        xs: {
+          'Killed by Year': 'x1',
+          'Number of Injuries': 'x2',
+          'Number of Incidents per Year': 'x3',
+        },
+        columns: [
+          ['x1', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+          ['Killed by Year', 14, 4, 5, 1, 5, 3, 9, 9, 1, 5, 1, 3, 2, 32, 3, 6, 0, 2, 5, 21],
+          ['x2', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+          ['Number of Injuries', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
+          ['x3', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+          ['Number of Incidents per Year', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12]
+
+        ]
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+      }
+    });
+
+    var chart2 = c3.generate({
+      bindto: '#shootingsByTypeChart',
+      data: {
+        columns: [
+          ['Targeted', 130],
+          ['indiscriminate', 42],
+          ['Accidental', 25],
+          ['Targeted and indiscriminate', 5],
+          ['Public suicide', 4],
+          ['Unclear', 3],
+          ['hostage suicide', 2],
+          ['Accidental or targeted', 2],
+          ['Public suicide (attempted)', 1]
+        ],
+        type: 'bar'
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+      }
+    });
+
+    var chart3 = c3.generate({
+      bindto: '#shooterRaceChart',
+      data: {
+        // iris data from R
+        columns: [
+          ['Asian', 0.95],
+          ['American Indian', 2.86],
+          ['Black', 33.33],
+          ['Hispanic', 5.71],
+          ['White', 57.14],
+        ],
+        type: 'donut',
+        onclick: function(d, i) {
+          console.log("onclick", d, i);
+        },
+        onmouseover: function(d, i) {
+          console.log("onmouseover", d, i);
+        },
+        onmouseout: function(d, i) {
+          console.log("onmouseout", d, i);
+        }
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+      }
+    });
+
+    </script>
+
+  </body>
+
+</html>

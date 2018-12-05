@@ -9,6 +9,9 @@ body{
 p{
  text-align:left;
  line-height:180%;
+ font-family: 'PT Serif', serif;
+ color: black;
+ font-size: 1em;
 }
 
 .red {
@@ -67,7 +70,7 @@ ul.navbar-nav {
   margin-bottom: 25px;
 }
 
-h2 {
+.chapter-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   font-weight: 700;
@@ -93,23 +96,18 @@ h2 {
 
 #footer {
   background: #000;
-  color: black;
   height: 100px;
   padding: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
-
+.footer-text{
+  text-align: center;
+  color:white;
+  font-family:'Montserrat', sans-serif;
+}
 #column {
   padding-bottom: 100px;
-}
-
-#copyright {
-  font-size: 14px;
-  padding-bottom: 5px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  color:white;
 }
 a{
   text-decoration: none;
@@ -122,25 +120,25 @@ a:visited{
   color:#999;
 }
 .stack-image{
-width:50%;
-height:50%;
+width:100%;
+max-width:900px;
 display: block;
-margin-left: auto;
-margin-right: auto;
+margin:0 auto;
 padding-top:30px;
 }
 .caption{
- width:50%;
- height: 50%;
- display: block;
- margin-left: auto;
- margin-right: auto;
+ width:100%;
+ max-width:900px;
+ margin:0 auto;
  padding-bottom:30px;
  font-family: 'Montserrat', sans-serif;
  color:#999;
 }
 .graphic-container h2{
   font-size: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .graphic-container {
  padding-top:30px;
@@ -154,22 +152,13 @@ padding-top:30px;
 .cite{
   color: grey;
 }
-p{
-  font-family: 'PT Serif', serif;
-  color: black;
-  font-size: 1em;
-}
-#graphicheading{
-  color:grey;
-  font-size: 2em;
-  text-align: center;
+
+.graphic-text{
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
-#graphiccontent{
+.graphic-caption{
   font-family: 'Montserrat', sans-serif;
-}
-#source{
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
   font-style: italic;
+  text-align: center;
 }
