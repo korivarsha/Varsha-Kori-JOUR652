@@ -26,6 +26,7 @@ p{
 .green {
  color: #88df6b;
  font-size: 2em;
+ font-family: 'Montserrat', sans-serif;
 }
 .bg-dark {
  background:#2b3b51 !important;
@@ -59,19 +60,55 @@ ul.navbar-nav {
 
     /* Text styles */
     text-align: center;
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(braille.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .hero h1{
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   font-weight: 700;
   text-align: center;
+  /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 .hero p{
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.star{
-    text-align: center;
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: #88df6b;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+    /* Border styles */
+    border: 3px solid #88df6b;
+    border-radius: 30px;
+
+    /* Background styles */
+    /*background-color: #88df6b;*/
+}
+.hero .btn:hover {
+  background-color: #88df6b;
+  color: white;
 }
 .introtext{
   font-family: 'Montserrat', sans-serif;
