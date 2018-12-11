@@ -35,6 +35,7 @@ p{
  background: linear-gradient(to right, #88df6b 0%, #1f8397 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+font-size: 1.29em;
 }
 .bg-dark {
  background:#2b3b51 !important;
