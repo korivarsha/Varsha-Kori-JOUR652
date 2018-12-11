@@ -1,6 +1,6 @@
 @media screen and (max-width: 1080px) {
  #container {
-   padding-left: 20px;
+  padding-left: 20px;
    padding-right: 20px;
  }
  h1{
@@ -13,6 +13,11 @@
    width: 100%;
    font-size: 22px;
  }
+ #container2{
+     margin: 0 auto;
+     margin-top: 20px;
+   }
+
 }
 
 body{
@@ -158,7 +163,7 @@ h1{
 }
 blockquote{
   background: #f9f9f9;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   border-left: 10px solid yellow;
   color: grey;
