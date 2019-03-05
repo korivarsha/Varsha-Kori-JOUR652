@@ -1,9 +1,42 @@
+@media screen and (max-width: 576px) {
+.hero h1 {
+      font-size: 6vw;
+}
+.hero h2 {
+      font-size: 5vw;
+  }
+.hero p {
+      font-size:3.5vw;
+  }
+.hero .update{
+    font-size: 3vw;
+  }
+
+}
+
+@media screen and (min-width: 577px) {
+.hero h1 {
+          font-size: 3vw;
+}
+.hero h2 {
+    font-size: 2.5vw;
+  }
+.hero p {
+      font-size:1.25vw;
+  }
+.hero .update{
+    font-size: 1vw;
+  }
+
+}
+
 
 .hero{
   max-width: 100%;
 }
 body{
   margin:0;
+  font-size: 16px;
 }
 
 #navbar1{
@@ -40,7 +73,7 @@ body{
   .hero h1 {
       /* Text styles */
       color: #FFD520;
-      font-size: 3vw;
+      /*font-size: 3vw;*/
 
       /* Margins */
       margin-top: 4rem;
@@ -49,7 +82,7 @@ body{
   .hero h2 {
       /* Text styles */
       color: #ffffff;
-      font-size: 2.5vw;
+      /*font-size: 2.5vw;*/
 
       /* Margins */
       margin-top: 0;
@@ -58,22 +91,22 @@ body{
   .hero p {
       /* Text styles */
       color: #ffffff;
-      font-size:1.5vw;
+      /*font-size:1.25vw;*/
 
       /* Margins */
       margin-top: 0;
       margin-bottom: 0.5rem;
   }
-  .update{
+  .hero .update{
     color: #ffffff;
     opacity: 0.7;
-    font-size: 0.75vw;
+/*    font-size: 1vw;*/
   }
 
 #hr1{
   border: 0;
   clear:both;
-  width: 70vw;
+  width: 90vw;
   color:#FFD520;
   background-color:#FFD520;
   height: 0.3vw;
@@ -95,11 +128,11 @@ body{
 .hero .btn {
     /* Positioning and sizing */
     display: block;
-    width: 150px;
+
 
     /* Padding and margins */
     padding: 1em;
-    margin-top: 50px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
 
