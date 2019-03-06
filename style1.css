@@ -11,7 +11,14 @@
 .hero .update{
     font-size: 3vw;
   }
-
+  /*.navbar-brand{
+      width: 50vw;
+      height: 20vw;
+  }
+  #IRPAlogo{
+    width: 20vw;
+    height: 15vw;
+  }*/
 }
 
 @media screen and (min-width: 577px) {
@@ -27,9 +34,16 @@
 .hero .update{
     font-size: 1vw;
   }
+  /*.navbar-brand{
+      width: 30vw;
+      height: 10vw;
+  }
+  #IRPAlogo{
+    width: 15vw;
+    height: 8vw;
+  }*/
 
 }
-
 
 .hero{
   max-width: 100%;
@@ -46,7 +60,6 @@ body{
   background-color: white !important;
   border-bottom: 1px #ebebeb solid;
 }
-
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url("mitchell.png");
     background-size: cover;
@@ -124,31 +137,81 @@ body{
   clear: both;
   display: block;
 }
-
-.hero .btn {
-    /* Positioning and sizing */
-    display: block;
-
-
-    /* Padding and margins */
-    padding: 1em;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* Text styles */
-   color: white;
-   text-decoration: none;
-   font-size: 1em;
-
-    /* Border styles */
-    border: 3px solid white;
-    /*border-radius: 30px;*/
-
-    /* Background styles */
-    /*background-color: rgba(147, 112, 219, 0.8);*/
-}
 nav
 {
 overflow: auto;
+}
+
+.scrolldown a:hover {
+  opacity: .5;
+}
+#section01 a span {
+  margin: 0 auto;
+  width: 2vw;
+  height: 2vw;
+  display: block;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: #333333;
+  min-width:100%;
+  max-width:100%;
+  height: auto;
+}
+h6 {
+  color: #FFD520;
+}
+.footertext{
+  color: #ffffff;
+}
+footer a{
+  color: #fff;
+  opacity: 0.5;
+}
+footer a:hover{
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
