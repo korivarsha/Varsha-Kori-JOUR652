@@ -59,9 +59,11 @@ body{
 #navbar2{
   background-color: white !important;
   border-bottom: 1px #ebebeb solid;
+  z-index: 1000;
 }
+
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url("mitchell.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.80)), url("mitchell.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,7 +87,7 @@ body{
 
   .hero h1 {
       /* Text styles */
-      color: #FFD520;
+      color: #FFF; /*#FFD520*/
       /*font-size: 3vw;*/
 
       /* Margins */
@@ -163,11 +165,17 @@ footer{
   max-width:100%;
   height: auto;
 }
-h6 {
+h6{
   color: #FFD520;
 }
-.footertext{
+
+h7 {
   color: #ffffff;
+}
+.address{
+  color: #ffffff;
+  opacity: 0.3;
+  font-size: 14px;
 }
 footer a{
   color: #fff;
@@ -176,9 +184,20 @@ footer a{
 footer a:hover{
     color: #fff;
     opacity: 1;
-    text-decoration: none;
+    text-decoration: underline;
 }
+.footertext{
+  color: #fff;
+  opacity: 0.5;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.footerheading{
+  font-size: 16px;
+  color: #fff;
 
+}
 #button {
   display: inline-block;
   background-color: #FF9800;
@@ -193,7 +212,7 @@ footer a:hover{
   opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+
 }
 #button::after {
   content: "\f077";
