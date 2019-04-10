@@ -18,17 +18,20 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <!-- Load our CSS -->
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Load our JavaScript file -->
     <script src="javascript.js"></script>
+
+    <!--<link rel="icon" type="image/png"  href="IRPA Logo.png">-->
 
   </head>
 
   <body>
+
     <nav class="navbar navbar-expand-md bg-light navbar-light navbar-fixed-top" id="navbar1">
       <div class="container-fluid">
-      <a href="index.html" class="navbar-brand"><img src="UMD IRPA logo.svg" alt="UMD IRPA Logo" height="100%" width="150%"></a>
-      <a href="index.html" class="ml-auto" id="IRPAlogo"><img src="IRPA Logo.svg" alt="UMD IRPA Logo" height="70%" width="60%"></a>
+      <a href="index.html" class="navbar-brand"><img src="UMD IRPA logo.svg" alt="UMD IRPA Logo" class="UMDIRPAlogo"></a>
+      <a href="index.html" class="ml-auto"><img src="IRPA Logo.svg" alt="UMD IRPA Logo" class="IRPAlogo"></a>
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarcollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,7 +42,7 @@
     <div class="navbar-collapse collapse pt-2 pt-md-0" id="navbarcollapse">
         <ul class="navbar-nav nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,11 +50,11 @@
             </a>
 
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">About IRPA</a>
+                <a class="dropdown-item" href="about.html">About IRPA</a>
                 <a class="dropdown-item" href="#">Help & FAQ</a>
                 <a class="dropdown-item" href="#">Links & Resources</a>
                 <a class="dropdown-item" href="#">News (Archives)</a>
-                <a class="dropdown-item" href="#">Staff Directory</a>
+                <a class="dropdown-item" href="staffdirectory.html">Staff Directory</a>
                 <a class="dropdown-item" href="#">Staff Publications & Presentations</a>
               </div>
             </li>
@@ -60,7 +63,7 @@
               Institutional Data
             </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Campus Counts</a>
+                <a class="dropdown-item" href="campuscounts.html">Campus Counts</a>
                 <a class="dropdown-item" href="#">Common Datasets</a>
                 <a class="dropdown-item" href="#">Data Docs</a>
                 <a class="dropdown-item" href="#">Data Governance</a>
@@ -108,12 +111,13 @@
     </div>
   </div>
 </nav>
+
 <div class="hero">
   <div class="hero-inner">
-    <div class="container">
+    <div class="container" id="hero">
       <div class="row">
-        <h1>University of Maryland Fast Facts</h1>
-        <hr id="hr1">
+        <h1 class="yellow">University of Maryland Fast Facts</h1>
+        <hr class="hr1">
       </div>
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-6 col-6">
@@ -167,106 +171,119 @@
         <p class="update">(As of Fall 2018)</p>
       </div>
     </div>
-    <!--<div id="section01" class="scrolldown">
-      <a href="#section02">
-        <span></span>
-
-      </a>
-    </div>-->
+    <!-- <img id="scrolldown" src="chevron-down-solid.svg"></img> -->
   </div>
   </div>
 </div>
-<!-- Back to top button -->
-<a id="button"></a>
-<div class="container-fluid py-3" id="section02">
-    <h2>Content here..</h2>
-    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
 
-<p>Ethical Kickstarter PBR
-asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan
-Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
-readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy
-leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
-forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
 
-    <h2>Content here..</h2>
-    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh
-synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+  <div class="row1">
+    <div class="centered">
+    <h1 class="yellow">About IRPA</h1>
+    <p class="largetext">The Office of Institutional Research, Planning, and Assessment provides essential information about the University of Maryland for the purposes of decision-making, policy analysis, strategic planning, mandated reporting, and academic program review.</p>
+    <a href="about.html" class="btn btn-outline-light" role="button">Read More</a>
 
-<p>Ethical Kickstarter PBR
-asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan
-Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
-readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy
-leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
-forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
 
-    <h2>Content here..</h2>
-    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh
-synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+  </div>
+    <!--<div class="col-12 col-md">
+      <img id= "marylandflag" src="maryland_flag.png" alt="Background image of Maryland flag for information on About IRPA" width="110%" height="100%"></img>
+      <div class="centered">
+        <h1 class="yellow">About IRPA</h1>
+        <p class="largetext">The Office of Institutional Research, Planning, and Assessment provides essential information about the University of Maryland for the purposes of decision-making, policy analysis, strategic planning, mandated reporting, and academic program review.</p>
+        <a href="about.html" class="btn btn-outline-light" role="button">Read More</a>
+      </div>
+    </div>-->
+  <!--  <div class="col-12 col-md">
+      <img src="mitchell-3.jpg" alt="Photo of Mitchell building" width="100%" height="auto"></img>
+    </div> -->
+  </div>
 
-<p>Ethical Kickstarter PBR
-asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan
-Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
-readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy
-leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
-forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
-    <h2>Content here..</h2>
-    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh
-synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+  <div class="background">
+<div>
+  <div class="row2">
+    <div>
+    <h1 class="commondestination">Common Destinations </h1>
+  </div>
+  </div>
+  <div class="pfeil"></div>
+</div>
 
-<p>Ethical Kickstarter PBR
-asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan
-Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
-readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy
-leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
-forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+<div id="commondestination2">
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-md">
+      <h2>Campus Counts</h2>
+      <p>Campus Counts has all the publicly accessible graphical display of data on enrollment, applications, degrees, and retention/graduation rates.</p>
+       <a class="slide-link" href="campuscounts.html">See More &rarr;</a>
+    </div>
+    <div class="col-12 col-md">
+      <h2>Common Datasets</h2>
+      <p>This data set is designed to provide data to publishers in an easily accessible format. The development of this survey assures our customers that they will obtain consistent and complete information.</p>
+      <a class="slide-link" href="#">See More &rarr;</a>
+    </div>
+    <div class="col-12 col-md">
+      <h2>Course Evaluations</h2>
+      <p>Course evaluations are a part of the process by which the University of Maryland seeks to improve teaching and learning. </p>
+      <a class="slide-link" href="#">See More &rarr;</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md">
+      <h2>Faculty Staff Reporting</h2>
+      <p>Faculty & staff reporting explores the areas of FAR, Instructional Workload & OPA.</p>
+      <a class="slide-link" href="#">See More &rarr;</a>
+    </div>
+    <div class="col-12 col-md">
+      <h2>Learning Outcomes</h2>
+      <p>The assessment of undergraduate student learning outcomes is the national standard for improving teaching and learning in higher education.</p>
+      <a class="slide-link" href="#">See More &rarr;</a>
+    </div>
+    <div class="col-12 col-md">
+      <h2>Reports</h2>
+      <p>Previously known as Profiles, this is the new interactive site for information on enrollments, degrees, graduation rates, employees, and more.</p>
+      <a class="slide-link" href="https://www.reports.umd.edu">See More &rarr;</a>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 
 <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-          <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>-->
-        <!--  <small class="d-block mb-3 text-muted">&copy; 2017-2018</small> -->
-        <h6>Office of Institutional Research, Planning and Assessment </h6>
+
+        <h5>Office of Institutional Research, Planning and Assessment </h5>
         <p class="address">1101, Mitchell Building <br/>7999 Regents Drive<br/> College Park, MD 20742 <br/>301-405-5590 irpa@umd.edu</p>
-        <p><a href="https://www.reports.umd.edu">reports.umd.edu</a></p>
-        <p><a href="https://umd.edu/web-accessibility"> Web Accessibility </a></p>
+        <!--<p><a href="https://www.reports.umd.edu">reports.umd.edu</a></p>
+        <p><a href="https://umd.edu/web-accessibility"> Web Accessibility </a></p>-->
         </div>
         <div class="col-6 col-md">
-          <strong><p class="footerheading">About</p></strong>
+          <h6>About</h6>
           <ul class="list-unstyled text-small">
-            <li><a href="#" class="footertext">About IRPA</a></li>
-            <li><a href="#" class="footertext">Help/FAQ</a></li>
-            <li><a href="#" class="footertext">Links/Resources</a></li>
-            <li><a href="#" class="footertext">News(Archives)</a></li>
-            <li><a href="#" class="footertext">Staff Directory</a></li>
-            <li><a href="#" class="footertext">Staff Publications & Presentations</a></li>
+            <li><a href="about.html" >About IRPA</a></li>
+            <li><a href="#" >Help/FAQ</a></li>
+            <li><a href="#" >Links/Resources</a></li>
+            <li><a href="#" >News(Archives)</a></li>
+            <li><a href="staffdirectory.html" >Staff Directory</a></li>
+            <li><a href="#" >Staff Publications & Presentations</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
-          <strong><p class="footerheading">Institutional Data</p></strong>
+          <h6>Institutional Data</h6>
           <ul class="list-unstyled text-small">
-            <li><a href="#" class="footertext">Campus Counts</a></li>
-            <li><a href="#" class="footertext">Common Datasets</a></li>
-            <li><a href="#" class="footertext">Data Docs</a></li>
-            <li><a href="#" class="footertext">Data Governance</a></li>
-            <li><a href="#" class="footertext">Historic Data</a></li>
-            <li><a href="#" class="footertext">Race/Ethnicity Information</a></li>
-            <li><a href="#" class="footertext">Reports</a></li>
-            <li><a href="#" class="footertext">Standard Occupational Classification Reporting Information</a></li>
+            <li><a href="campuscounts.html">Campus Counts</a></li>
+            <li><a href="#">Common Datasets</a></li>
+            <li><a href="#" >Data Docs</a></li>
+            <li><a href="#" >Data Governance</a></li>
+            <li><a href="#" >Historic Data</a></li>
+            <li><a href="#" >Race/Ethnicity Information</a></li>
+            <li><a href="#" >Reports</a></li>
+            <li><a href="#" >Standard Occupational Classification Reporting Information</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h7>CAWG</h7>
+          <h6>CAWG</h6>
           <ul class="list-unstyled text-small">
             <li><a href="#">CAWG Charter</a></li>
             <li><a href="#">CAWG FAQs</a></li>
@@ -274,7 +291,7 @@ forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h7>Academic Assessment</h7>
+          <h6>Academic Assessment</h6>
           <ul class="list-unstyled text-small">
             <li><a href="#">Course Evaluation</a></li>
             <li><a href="#">Program Learning Outcomes</a></li>
@@ -282,7 +299,7 @@ forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h7>Faculty Staff Reporting</h7>
+          <h6>Faculty Staff Reporting</h6>
           <ul class="list-unstyled text-small">
             <li><a href="#">About Faculty Staff Reporting</a></li>
             <li><a href="#">Faculty Activity Reports (FAR)</a></li>
@@ -291,8 +308,10 @@ forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art
           </ul>
         </div>
       <div class="col-6 col-md">
-        <ul class="list-unstyled text-small"><li><a href="#">Decision Support</a></li></ul>
-      </div>
+        <ul class="list-unstyled text-small"><li><a href="#">Decision Support</a></li>
+          <li><a href="https://www.reports.umd.edu">reports.umd.edu</a></li>
+          <li> <a href="https://umd.edu/web-accessibility"> Web Accessibility </a></li>
+        </ul>
       </div>
     </footer>
 

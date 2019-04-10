@@ -1,49 +1,98 @@
-@media screen and (max-width: 576px) {
-.hero h1 {
-      font-size: 6vw;
-}
-.hero h2 {
-      font-size: 5vw;
-  }
-.hero p {
-      font-size:3.5vw;
-  }
-.hero .update{
-    font-size: 3vw;
-  }
-  /*.navbar-brand{
-      width: 50vw;
-      height: 20vw;
-  }
-  #IRPAlogo{
-    width: 20vw;
-    height: 15vw;
-  }*/
-}
 
-@media screen and (min-width: 577px) {
-.hero h1 {
-          font-size: 3vw;
-}
-.hero h2 {
-    font-size: 2.5vw;
+@media screen and (max-width: 360px) {
+  h1 {
+        font-size: 24px;
+
   }
-.hero p {
-      font-size:1.25vw;
+  .hero h1{
+    padding-left: 10px;
   }
-.hero .update{
-    font-size: 1vw;
+  .hr1{
+    display: block;
+    margin: 0 auto;
   }
-  /*.navbar-brand{
-      width: 30vw;
-      height: 10vw;
-  }
-  #IRPAlogo{
-    width: 15vw;
-    height: 8vw;
-  }*/
+  h2 {
+        font-size: 22px;
+    }
+  .hero p {
+        font-size:16px;
+    }
+  .hero .update{
+      font-size: 14px;
+    }
+    .largetext{
+      color: #fff;
+    }
+    button{
+      display:block;
+      margin:0.4em auto;
+     }
+    /*.navbar-brand{
+        width: 50vw;
+        height: 20vw;
+    }*/
 
 }
+@media (max-width:629px){
+  .IRPAlogo{
+  display:none;
+  }
+
+  .UMDIRPAlogo
+  {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (min-width: 630px){
+  .UMDIRPAlogo
+  {
+    width: 120%;
+    height: 100%;
+  }
+  .IRPAlogo{
+    width: 40%;
+    height: auto;
+    float: right;
+  }
+}
+@media screen and (min-width: 361px) {
+  h1 {
+        font-size: 32px;
+
+  }
+  .hero h1{
+    padding-left: 10px;
+  }
+  .hr1{
+    display: block;
+    margin: 0 auto;
+  }
+ h2 {
+        font-size: 28px;
+    }
+  .hero p {
+        font-size:18px;
+    }
+  .hero .update{
+      font-size: 14px;
+    }
+    .largetext{
+      color: #fff;
+      font-size: 20px;
+    }
+    button{
+      display:block;
+      margin:0.4em auto;
+     }
+
+    #scrolldown{
+      width:10%;
+      height:10%;
+    }
+
+
+  }
 
 .hero{
   max-width: 100%;
@@ -51,6 +100,14 @@
 body{
   margin:0;
   font-size: 16px;
+  color: #222;
+}
+/*h1, h2, h3
+{
+  font-family: 'Crimson Text', Georgia, serif;
+}*/
+h1, h2, h3, h4, h5, p{
+   font-family: 'Source Sans Pro', Arial, Helvetica, Verdana, sans-serif;
 }
 
 #navbar1{
@@ -68,9 +125,10 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
   /* Sizing */
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: auto;
 
   /* Flexbox stuff */
       display: block;
@@ -84,14 +142,16 @@ body{
       text-align:left;
 
 }
+.yellow{
+    color: #FFD520;
 
-  .hero h1 {
+}
+.hero h1 {
       /* Text styles */
-      color: #FFF; /*#FFD520*/
       /*font-size: 3vw;*/
 
       /* Margins */
-      margin-top: 4rem;
+
       margin-bottom: 0.5rem;
   }
   .hero h2 {
@@ -118,49 +178,40 @@ body{
 /*    font-size: 1vw;*/
   }
 
-#hr1{
+.hr1{
   border: 0;
   clear:both;
   width: 90vw;
   color:#FFD520;
   background-color:#FFD520;
-  height: 0.3vw;
+  height: 3px;
   text-align:left;
   margin: 0 auto 0 0;
 }
 .hr2{
-  height:0.1vw;
+  height:2px;
   border: 0;
   color:#fff;
   background-color:#fff;
-  width:3vw;
+  width:15px;
   text-align:left;
   margin: 30% auto 0 0;
   clear: both;
   display: block;
 }
-nav
-{
-overflow: auto;
-}
 
+#hero{
+  padding: 4em;
+}
+/**
 .scrolldown a:hover {
   opacity: .5;
 }
-#section01 a span {
-  margin: 0 auto;
-  width: 2vw;
-  height: 2vw;
-  display: block;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
+**/
+
 
 footer{
-  background-color: #333333;
+  background-color: #222;
   min-width:100%;
   max-width:100%;
   height: auto;
@@ -168,69 +219,124 @@ footer{
 h6{
   color: #FFD520;
 }
-
-h7 {
+h5{
   color: #ffffff;
+  font-size: 16px;
+  opacity: 0.5;
 }
 .address{
   color: #ffffff;
-  opacity: 0.3;
+  opacity: 0.5;
   font-size: 14px;
 }
 footer a{
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 footer a:hover{
     color: #fff;
     opacity: 1;
     text-decoration: underline;
 }
-.footertext{
+/*.footertext{
   color: #fff;
   opacity: 0.5;
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: underline;
-}
-.footerheading{
-  font-size: 16px;
-  color: #fff;
+}*/
+
+
+/*#marylandflag{
+    background-image: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0, 0.9));
+    opacity: 0.5;
+}*/
+
+.centered {
+  width:80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s,
-  opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
+
+.btn{
+    border-radius: 0px;
+}
+
+
+.commondestination{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
 
 }
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
+.row1{
+  height: 400px;
+  position: relative;
+  text-align: left;
   background-color: #333;
 }
-#button:active {
-  background-color: #555;
+.row2{
+  background-color: #f8dc08;
+  height: 150px;
+  position: relative;
 }
-#button.show {
-  opacity: 1;
+#commondestination2{
+  margin:5%;
+}
+
+.hover-content {
+    display:none;
+}
+.parent:hover .hover-content {
+    display: inline-block;
+}
+.slide-link {
+  color: #190cab;
+  float: left;
+  margin-bottom: 30px;
+
+  line-height: 2em;
+  position: relative;
+}
+/* line 786, ../sass/_base.scss */
+.slide-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #190cab;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* line 803, ../sass/_base.scss */
+.slide-link:hover {
+  color: #190cab;
+  text-decoration: none;
+}
+
+/* line 806, ../sass/_base.scss */
+.slide-link:hover::before {
   visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.background{
+  background-color: #f8dc08;
+  height: 800px;
+  width:100%
 }
