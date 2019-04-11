@@ -279,10 +279,10 @@ footer a:hover{
   height: 400px;
   position: relative;
   text-align: left;
-  background-color: #333;
+  background-color: #f8dc08;
 }
 .row2{
-  background-color: #f8dc08;
+  background-color: #333;
   height: 150px;
   position: relative;
 }
